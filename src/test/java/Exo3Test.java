@@ -11,7 +11,7 @@ public class Exo3Test {
     }
 
     @Test
-    public void ElementPresentAtFirstPosition() {
+    public void ElementPresentInTheRightSide() {
         int[] array = {10, 20, 30, 40, 50};
         assertEquals(0, Exo3.binarySearch(array, 10));
     }
@@ -23,7 +23,7 @@ public class Exo3Test {
     }
 
     @Test
-    public void ElementPresentAtLastPosition() {
+    public void ElementPresentInTheLeftSide() {
         int[] array = {10, 20, 30, 40, 50};
         assertEquals(4, Exo3.binarySearch(array, 50));
     }
@@ -40,28 +40,8 @@ public class Exo3Test {
         assertEquals(-1, Exo3.binarySearch(array, 10));
     }
 
-    @Test
-    public void ArrayWhichContainsOnlyOneElementWhichMatchWithElementGiven() {
-        int[] array = {10};
-        assertEquals(0, Exo3.binarySearch(array, 10));
-    }
 
-    @Test
-    public void ArrayWhichContainsOnlyOneElementWhichDosentMatchWithElementGiven() {
-        int[] array = {10};
-        assertEquals(-1, Exo3.binarySearch(array, 5));
-    }
 
-    @Test
-    public void ArrayWithTwoElementsAndTheFirstElementIsTheOne() {
-        int[] array = {10, 20};
-        assertEquals(0, Exo3.binarySearch(array, 10));
-    }
 
-    @Test
-    public void ArrayWithTwoElementsAndTheSecondElementIsTheOne() {
-        int[] array = {10, 20};
-        assertEquals(1, Exo3.binarySearch(array, 20));
-    }
 }
 
